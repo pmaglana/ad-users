@@ -4,13 +4,9 @@
 
 <h1>Creating Users with PowerShell</h1>
 
-<h2>What is Active Directory</h2>
-
-<t>Active Directory is Microsoft’s directory service that stores and manages information about users, computers, and other resources on a network, enabling secure authentication, authorization, and centralized administration.</t>
-
 <h2>About this Project</h2>
 
-In this project we are going to create users which we will use to attempt to log into client-1.
+This is a continuation project, refer to [Active Directory Installation and Configuration](https://github.com/pmaglana/ad-config) for additional information. In this project we are going to create users which we will use to attempt to log into client-1.
 
 <h2>Environment & Technology Used</h2>
 
