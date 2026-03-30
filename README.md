@@ -40,14 +40,23 @@ This is a continuation project, refer to [Active Directory Installation and Conf
         <img width="896" height="808" alt="actdir20" src="https://github.com/user-attachments/assets/9e6a4d0d-744a-4945-978c-abd06d37b1df"/>
         </details>
 
-4. Run the script and observe the accounts being created.
+3. Run the script and observe the accounts being created.
         <details><summary>See screenshots</summary>
         <img width="967" height="1024" alt="actdir21" src="https://github.com/user-attachments/assets/db7026a3-eca1-41e8-8a69-04c308b0b906" />
         </details>
 
-5. When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES).
+4. When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES).
         <details><summary>See screenshots</summary>
         <img width="1466" height="659" alt="actdir22" src="https://github.com/user-attachments/assets/2e4885ea-8e41-480f-a67a-cf449903b03b" />
         </details>
         
-6. attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+5. Attempt to log into Client-1 with one of the accounts (take note of the password in the script).
+   
+
+<h2>Finishing Up</h2>
+
+<h3>Congratulations for completing this part of the project, please continue on to the next one for more Active Directory projects.</h3>
+
+
+<sub>*Having issues and trouble with this Lab Project? Please reach out to easy.patch3668@fastmail.com*</sub>
+
