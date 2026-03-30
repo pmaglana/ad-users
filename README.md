@@ -35,7 +35,7 @@ This is a continuation project, refer to [Active Directory Installation and Conf
 <h3>Create a bunch of users and attempt to log into client-1 with one of the users</h3>
 
 1. Login to DC-1 as jane_admin. Open PowerShell_ise as an administrator.
-2. Create a new File and paste the contents of this [script](https://github.com/pmaglana/ad-config/blob/main/generate_users) into it, and save it in your desktop.
+2. Create a new File and paste the contents of this [script](https://github.com/pmaglana/ad-users/blob/main/generate-users) into it, and save it in your desktop.
         <details><summary>See screenshots</summary>
         <img width="896" height="808" alt="actdir20" src="https://github.com/user-attachments/assets/9e6a4d0d-744a-4945-978c-abd06d37b1df"/>
         </details>
