@@ -49,3 +49,5 @@ This is a continuation project, refer to [Active Directory Installation and Conf
         <details><summary>See screenshots</summary>
         <img width="1466" height="659" alt="actdir22" src="https://github.com/user-attachments/assets/2e4885ea-8e41-480f-a67a-cf449903b03b" />
         </details>
+        
+6. attempt to log into Client-1 with one of the accounts (take note of the password in the script)
