@@ -57,9 +57,18 @@ In this project we are going to create users which we will use to attempt to log
 
 1. Log-in to dc-1 and pick a random user account you created previously, then attempt to log in with it 10 times with a bad password.
 
+
+<h3>Enabling and Disabling Accounts</h3>
+
+1.
+
+<h3>Observing Logs</h3>
+
+1.
+
 <h2>Finishing Up</h2>
 
-<h3>Congratulations for completing this part of the project, please continue on to the next one for more Active Directory projects.</h3>
+<h3>Congratulations...</h3>
 
 
 <sub>*Having issues and trouble with this Lab Project? Please reach out to easy.patch3668@fastmail.com*</sub>
