@@ -2,11 +2,11 @@
 <img width="2544" height="416" alt="_adbanner" src="https://github.com/user-attachments/assets/9ec096fb-3475-4826-b381-e6226792e685" />
 </p>
 
-<h1>Creating Users with PowerShell</h1>
+<h1>Creating Users with PowerShell, Group Policies, & Managing Accounts</h1>
 
 <h2>About this Project</h2>
 
-This is a continuation project, refer to [Active Directory Installation and Configuration](https://github.com/pmaglana/ad-config) for additional information. In this project we are going to create users which we will use to attempt to log into client-1.
+In this project we are going to create users which we will use to attempt to log into client-1. Hers, we will learn how to deal with Account Lockouts, Enabling and Disabling Accounts, and we will also observe logs via the Domain Controller and on a Client Machine.
 
 <h2>Environment & Technology Used</h2>
 
@@ -32,7 +32,7 @@ This is a continuation project, refer to [Active Directory Installation and Conf
       
 <h2>Getting Started</h2>
 
-<h3>Create a bunch of users and attempt to log into client-1 with one of the users</h3>
+<h3>Creating multiple users using PowerShell</h3>
 
 1. Login to DC-1 as jane_admin. Open PowerShell_ise as an administrator.
 2. Create a new File and paste the contents of this [script](https://github.com/pmaglana/ad-users/blob/main/generate-users) into it, and save it in your desktop.
@@ -51,7 +51,11 @@ This is a continuation project, refer to [Active Directory Installation and Conf
         </details>
         
 5. Attempt to log into Client-1 with one of the accounts (take note of the password in the script).
+
    
+<h3>Dealing with Account Lockouts</h3>
+
+1. Log-in to dc-1 and pick a random user account you created previously, then attempt to log in with it 10 times with a bad password.
 
 <h2>Finishing Up</h2>
 
