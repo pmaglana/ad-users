@@ -29,6 +29,10 @@ In this project we are going to create users which we will use to attempt to log
 3. Credentials:
     - Username: labuser
     - Password: Cyberlab123!
+   Admin Account
+    - Username: mydomain.com\jane_admin
+    - Password: Cyberlab123!
+
       
 <h2>Getting Started</h2>
 
@@ -56,32 +60,45 @@ In this project we are going to create users which we will use to attempt to log
 <h3>Dealing with Account Lockouts</h3>
 
 1. If you aren't yet, go ahead and log-in to dc-1 and click Start, and type gpmc.msc in the search box, then press Enter. This opens the Group Policy Management Console.
-2. In the GPMC, navigate to the Group Policy Objects section, right-click Group Policy Objects and select Edit to modify it.
+2. In the GPMC, navigate to Default Domain Policy, right-click and select Edit to modify it.
         <details><summary>See screenshots</summary>
         <img width="751" height="529" alt="actdir25" src="https://github.com/user-attachments/assets/ef7c9921-cb81-4c84-b3ff-def6582e0773"/>
         </details>
+        
 3. In the Group Policy Management Editor, expand the following:
-        - Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.
+        Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.
         <details><summary>See screenshots</summary>
         <img width="703" height="514" alt="actdir26" src="https://github.com/user-attachments/assets/923db3f7-b2cc-4e1c-8944-a1381c9ed484" />
         </details>
-4. 
+        
+4. By double-clicking on each policy, configure the Account Lockout Policy to the following settings: (Some settings will be autopopulated after setting Account lockout duration)
+        Account lockout duration:               30 minutes
+        Account lockout threshold:              5 invalid logon attempts
+        Allow Administrator account lockout:    Enabled
+        Reset account lockout counter after:    10 minutes
+
+5. To update the group policy, log-on to a client machine and open Command Prompt then type *gpupdate /force*, then press Enter.
+        <details><summary>See screenshots</summary>
+        <img width="655" height="396" alt="actdir27" src="https://github.com/user-attachments/assets/7fdd4aa3-0771-43b7-bed0-67138fa354d8" />
+        </details>
+
+6. 
 
 
 
    
   
-5. pick a random user account you created previously.
+7. pick a random user account you created previously.
    Start > Search Active Directory Users and Computers > expand mydomain.com > expand _EMPLOYEES > select one random User.
         <details><summary>See screenshots</summary>
         <img width="777" height="786" alt="actdir23" src="https://github.com/user-attachments/assets/4b5fe25a-ab07-42a2-b255-a8bafa82a5d1"/>
         <img width="557" height="492" alt="actdir24" src="https://github.com/user-attachments/assets/98902649-765c-423c-8c2c-afe7896f4b9d"/>
         </details>
-6. C
-Configure Group Policy to Lockout the account after 5 attempts.
+        
+8. Configure Group Policy to Lockout the account after 5 attempts.
 
 
-7. Attempt to log in with it 10 times with an incorrect password.
+9. Attempt to log in with it 10 times with an incorrect password.
 
 <h3>Enabling and Disabling Accounts</h3>
 
