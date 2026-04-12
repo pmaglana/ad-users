@@ -42,12 +42,12 @@ In this project we are going to create users which we will use to attempt to log
 
 3. Run the script and observe the accounts being created.
         <details><summary>See screenshots</summary>
-        <img width="967" height="1024" alt="actdir21" src="https://github.com/user-attachments/assets/db7026a3-eca1-41e8-8a69-04c308b0b906" />
+        <img width="967" height="1024" alt="actdir21" src="https://github.com/user-attachments/assets/db7026a3-eca1-41e8-8a69-04c308b0b906"/>
         </details>
 
 4. When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES).
         <details><summary>See screenshots</summary>
-        <img width="1466" height="659" alt="actdir22" src="https://github.com/user-attachments/assets/2e4885ea-8e41-480f-a67a-cf449903b03b" />
+        <img width="1466" height="659" alt="actdir22" src="https://github.com/user-attachments/assets/2e4885ea-8e41-480f-a67a-cf449903b03b"/>
         </details>
         
 5. Attempt to log into Client-1 with one of the accounts (take note of the password in the script).
@@ -55,8 +55,33 @@ In this project we are going to create users which we will use to attempt to log
    
 <h3>Dealing with Account Lockouts</h3>
 
-1. Log-in to dc-1 and pick a random user account you created previously, then attempt to log in with it 10 times with a bad password.
+1. If you aren't yet, go ahead and log-in to dc-1 and click Start, and type gpmc.msc in the search box, then press Enter. This opens the Group Policy Management Console.
+2. In the GPMC, navigate to the Group Policy Objects section, right-click Group Policy Objects and select Edit to modify it.
+        <details><summary>See screenshots</summary>
+        <img width="751" height="529" alt="actdir25" src="https://github.com/user-attachments/assets/ef7c9921-cb81-4c84-b3ff-def6582e0773"/>
+        </details>
+3. In the Group Policy Management Editor, expand the following:
+        - Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.
+        <details><summary>See screenshots</summary>
+        <img width="703" height="514" alt="actdir26" src="https://github.com/user-attachments/assets/923db3f7-b2cc-4e1c-8944-a1381c9ed484" />
+        </details>
+4. 
 
+
+
+   
+  
+5. pick a random user account you created previously.
+   Start > Search Active Directory Users and Computers > expand mydomain.com > expand _EMPLOYEES > select one random User.
+        <details><summary>See screenshots</summary>
+        <img width="777" height="786" alt="actdir23" src="https://github.com/user-attachments/assets/4b5fe25a-ab07-42a2-b255-a8bafa82a5d1"/>
+        <img width="557" height="492" alt="actdir24" src="https://github.com/user-attachments/assets/98902649-765c-423c-8c2c-afe7896f4b9d"/>
+        </details>
+6. C
+Configure Group Policy to Lockout the account after 5 attempts.
+
+
+7. Attempt to log in with it 10 times with an incorrect password.
 
 <h3>Enabling and Disabling Accounts</h3>
 
