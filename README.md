@@ -6,7 +6,7 @@
 
 <h2>About this Project</h2>
 
-In this project we are going to create users which we will use to attempt to log into client-1. Hers, we will learn how to deal with Account Lockouts, Enabling and Disabling Accounts, and we will also observe logs via the Domain Controller and on a Client Machine.
+In this project we are going to create Users using PowerShell which we will use to attempt to log into client-1. Here, we will learn how to deal with Account Lockouts, Enabling and Disabling Accounts, and we will also observe logs via the Domain Controller and on a Client Machine.
 
 <h2>Environment & Technology Used</h2>
 
@@ -56,7 +56,7 @@ In this project we are going to create users which we will use to attempt to log
    
 <h3>Managing Group Policy and Dealing with Account Lockouts</h3>
 
-1. If you aren't yet, go ahead and log-in to dc-1 and click Start, and type gpmc.msc in the search box, then press Enter. This opens the Group Policy Management Console.
+1. Log-in to dc-1 and click Start, and type gpmc.msc in the search box, then press Enter. This opens the Group Policy Management Console.
 2. In the GPMC, navigate to Default Domain Policy, right-click and select Edit to modify it.
         <details><summary>See screenshots</summary>
         <img width="751" height="529" alt="actdir25" src="https://github.com/user-attachments/assets/ef7c9921-cb81-4c84-b3ff-def6582e0773"/>
@@ -88,7 +88,7 @@ In this project we are going to create users which we will use to attempt to log
         </details>
   
 8. Do the following Account lockout steps/exercises. 
-    - Using the "randowm user" you've created previously, attempt to login at client-1 6 times with a bad password.
+    - Using the "random user" you've created previously, attempt to login at client-1 6 times with a bad password.
         <details><summary>See screenshots</summary>
         <img width="555" height="145" alt="actdir28" src="https://github.com/user-attachments/assets/ff3124c7-fad6-4ef1-a230-f86155c5506a" />
         </details>
@@ -99,15 +99,12 @@ In this project we are going to create users which we will use to attempt to log
         <img width="1004" height="548" alt="actdir29" src="https://github.com/user-attachments/assets/a1ab19b1-5327-4189-b9e1-4c4bfd1ac655" />
         </details>
 
-    - Reset the password.
-    - Attempt to re-login with it.
+    - Reset the password by right clicking on the User, select and Reset Password, check/tick Unlock the user's account, click OK, and attempt to log-back in.
+        <details><summary>See screenshots</summary>
+        <img width="577" height="536" alt="actdir30a" src="https://github.com/user-attachments/assets/66de568d-7831-40b5-8eb5-eb359eb27ae8" />
+        <img width="379" height="258" alt="actdir30" src="https://github.com/user-attachments/assets/37161711-35cf-4e21-947f-75527b8dffdb" />
+        </details>
       
-
-        
-10. Configure Group Policy to Lockout the account after 5 attempts.
-
-
-9.. Attempt to log in with it 10 times with an incorrect password.
 
 <h3>Enabling and Disabling Accounts</h3>
 
