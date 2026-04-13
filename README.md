@@ -28,11 +28,8 @@ In this project we are going to create users which we will use to attempt to log
     - Set Client-1’s DNS settings to DC-1’s Private IP address.
 3. Credentials:
     - Username: labuser
-    - Password: Cyberlab123!
-   Admin Account
     - Username: mydomain.com\jane_admin
     - Password: Cyberlab123!
-
       
 <h2>Getting Started</h2>
 
@@ -57,7 +54,7 @@ In this project we are going to create users which we will use to attempt to log
 5. Attempt to log into Client-1 with one of the accounts (take note of the password in the script).
 
    
-<h3>Dealing with Account Lockouts</h3>
+<h3>Managing Group Policy and Dealing with Account Lockouts</h3>
 
 1. If you aren't yet, go ahead and log-in to dc-1 and click Start, and type gpmc.msc in the search box, then press Enter. This opens the Group Policy Management Console.
 2. In the GPMC, navigate to Default Domain Policy, right-click and select Edit to modify it.
@@ -73,11 +70,10 @@ In this project we are going to create users which we will use to attempt to log
       </details>
         
 4. By double-clicking on each policy, configure the Account Lockout Policy to the following settings: *(Some settings will be autopopulated after setting Account lockout duration)*
-
-      Account lockout duration:               30 minutes</br>
-      Account lockout threshold:              5 invalid logon attempts</br>
-      Allow Administrator account lockout:    Enabled</br>
-      Reset account lockout counter after:    10 minutes</br>
+    - Account lockout duration:                30 minutes
+    - Account lockout threshold:               5 invalid logon attempts                
+    - Allow Administrator account lockout:     Enabled   
+    - Reset account lockout counter after:     10 minutes
 
 6. To update the group policy, log-on to a client machine and open Command Prompt then type *gpupdate /force*, then press Enter.
         <details><summary>See screenshots</summary>
@@ -91,15 +87,24 @@ In this project we are going to create users which we will use to attempt to log
         <img width="557" height="492" alt="actdir24" src="https://github.com/user-attachments/assets/98902649-765c-423c-8c2c-afe7896f4b9d"/>
         </details>
   
-8. Attempt to log in with it 6 times with a bad password
+8. Do the following Account lockout steps/exercises. 
+    - Using the "randowm user" you've created previously, attempt to login at client-1 6 times with a bad password.
+        <details><summary>See screenshots</summary>
+        <img width="555" height="145" alt="actdir28" src="https://github.com/user-attachments/assets/ff3124c7-fad6-4ef1-a230-f86155c5506a" />
+        </details>
+        
+    - Observe that the account has been locked out within Active Directory.
+    - Unlock the account at dc-1, open Active Directory Users and Computers, double-click on the User, select Account tab and check/tick "Unlock account". Click Apply and OK.
+        <details><summary>See screenshots</summary>
+        <img width="1004" height="548" alt="actdir29" src="https://github.com/user-attachments/assets/a1ab19b1-5327-4189-b9e1-4c4bfd1ac655" />
+        </details>
 
-Observe that the account has been locked out within Active Directory
-Unlock the account
-Reset the password
-Attempt to login with it
+    - Reset the password.
+    - Attempt to re-login with it.
+      
 
         
-9. Configure Group Policy to Lockout the account after 5 attempts.
+10. Configure Group Policy to Lockout the account after 5 attempts.
 
 
 9.. Attempt to log in with it 10 times with an incorrect password.
