@@ -108,7 +108,20 @@ In this project we are going to create Users using PowerShell which we will use 
 
 <h3>Enabling and Disabling Accounts</h3>
 
-1.
+1. Disable the same account in Active Directory. Open ADUC, right-click on the user you want to disable, and click Disable Account.
+        <details><summary>See screenshots</summary>
+        <img width="576" height="536" alt="actdir31" src="https://github.com/user-attachments/assets/b2c9e379-1264-4fc1-9d8a-eaed67d0c334" />
+        </details>
+        
+2. Attempt to login with it, observe the error message.
+        <details><summary>See screenshots</summary>
+        <img width="565" height="141" alt="actdir32" src="https://github.com/user-attachments/assets/0ca9fce2-9af9-44b3-b57e-b3da5d2fba03" />
+        </details>
+        
+3. Re-enable the account by oppening ADUC, right-click on the user you want to enable, and click Enable Account. Attempt to log back in. 
+        <details><summary>See screenshots</summary>
+        <img width="575" height="536" alt="actdir33" src="https://github.com/user-attachments/assets/bd99ab30-2e02-4869-96df-1a65940df132" />
+        </details>
 
 <h3>Observing Logs</h3>
 
