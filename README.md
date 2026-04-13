@@ -125,11 +125,28 @@ In this project we are going to create Users using PowerShell which we will use 
 
 <h3>Observing Logs</h3>
 
-1.
+1. Observe the logs in the Domain Controller. Search Event Viewer > Windows Logs > Security.
+        <details><summary>See screenshots</summary>
+        <img width="1130" height="664" alt="actdir34" src="https://github.com/user-attachments/assets/830c09ef-3522-464e-9e66-707c0e0e3f69" />
+        </details>
+        
+2. Observe the logs on the client Machine.
+
+    A. Open Event Viewer as Administrator > Enter the Admin's credentials.
+               <details><summary>See screenshots</summary>
+               <img width="1130" height="664" alt="actdir34" src="https://github.com/user-attachments/assets/830c09ef-3522-464e-9e66-707c0e0e3f69" />
+               </details>
+               
+    B. At the Event Viewer window, under Windows Logs > right-click Security > Find: User (babu.vofi). As shown in the screenshot below, we were able to find the event/log where we intentionally entered wrong password for the user babu.vafi.
+                <details><summary>See screenshots</summary>
+                <img width="1256" height="723" alt="actdir37" src="https://github.com/user-attachments/assets/31b65011-f4ba-42d8-9e48-3b67ffd06492" />
+                <img width="1008" height="541" alt="actdir36" src="https://github.com/user-attachments/assets/9b340df9-425a-4d44-8383-ce027ec0ab08" />
+                </details>
+
 
 <h2>Finishing Up</h2>
 
-<h3>Congratulations...</h3>
+<h3>Congratulations! That concludes our project with Active Directory.</h3>
 
 
 <sub>*Having issues and trouble with this Lab Project? Please reach out to easy.patch3668@fastmail.com*</sub>
